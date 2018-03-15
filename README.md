@@ -1,5 +1,7 @@
 # Raspberry-Pi-Zero-Teensy-Communication
 
+Serial port of Raspberry Pi Zero : https://spellfoundry.com/2016/05/29/configuring-gpio-serial-port-raspbian-jessie-including-pi-3/
+
 Test the serial communication between Raspberry Pi Zero and Teensy 3.2
 
 Firstly, Need to open the Serial GPIO port of Raspberry Pi. Raspberry Pi Zero has 1 serial port at pin 8 and 10. Initially, this port is configured for Console command line. You need to disable the console command line in the file ```cmdline.txt```. Please refer to Raspberry Pi document for more detail.
