@@ -186,6 +186,9 @@ If you have a system with udev rules that create `/dev/serial0`  and `/dev/seria
 Then **reboot**
 
 ## 5. Video streaming
+
+reference: http://frozen.ca/streaming-raw-h-264-from-a-raspberry-pi/
+
 ### Camera setup
 1.In command line, type:
 
