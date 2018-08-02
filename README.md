@@ -247,7 +247,7 @@ $nc -l 2222 | mplayer -fps 200 -demuxer h264es -
 
 Raspberry Pi (Server)
 ```
-/opt/vc/bin/raspivid -t 0 -w 300 -h 300 -hf -fps 20 -o - | nc <IP-OF-THE-CLIENT> 2222
+/opt/vc/bin/raspivid -t 0 -w 300 -h 300 -hf -fps 20 -o - | nc IP-OF-THE-CLIENT 2222
 ```
 
 ## 6. Establish Serial communication with Teensy 3.2
