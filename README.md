@@ -237,18 +237,48 @@ http://RaspberryPi-IP:8090/
 ### Streaming video using netcat and mplayer (Linux)
 
 reference: https://raspberrypi.stackexchange.com/questions/27082/how-to-stream-raspivid-to-linux-and-osx-using-gstreamer-vlc-or-netcat
+
+Please follow the sequences:
+
 Linux (Client)
+
+1. Install mplayer (if you have already installed, skip this step).
 ```
 $sudo apt-get install mplayer
 ```
+2. In terminal, type the following command to check the IP of client.
+```
+$ifconfig
+```
+
+Check here to have a better understanding of how to get the IP address in Linux
+
+https://www.linuxtrainingacademy.com/determine-public-ip-address-command-line-curl/
+
+3. Run netcat to listen to the video stream ( if you havent installed netcat, please run: sudo apt-get install netcat. If it doesnt work, google how to install netcat in Linux).
 ```
 $nc -l 2222 | mplayer -fps 200 -demuxer h264es -
 ```
 
 Raspberry Pi (Server)
+
+4. Run the following command to start streamming:
 ```
 /opt/vc/bin/raspivid -t 0 -w 300 -h 300 -hf -fps 20 -o - | nc IP-OF-THE-CLIENT 2222
 ```
+
+*Note: You need to fill in IP-OF-THE-CLIENT by the IP of Linux client
+
+Video Parameter: 
+                
+                -w 300 : width of the video (here is 300 pixel)
+                
+                -h 300 : height of the video
+                
+                -hf : horizontal flip the video
+                
+                -fps 20 : frame rate (here is set to 20)
+   
 
 ## 6. Establish Serial communication with Teensy 3.2
 
