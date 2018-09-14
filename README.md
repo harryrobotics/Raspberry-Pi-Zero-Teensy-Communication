@@ -205,6 +205,8 @@ The file will be save at root.
 
 *Note: Remember to enable the Camera*
 
+Choose php 5 not 7
+
 https://elinux.org/RPi-Cam-Web-Interface
 
 ### Streaming video using vlc:
