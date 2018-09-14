@@ -201,6 +201,12 @@ $raspistill -v -o test.jpg
 
 The file will be save at root.
 
+### Streaming video using RPi-Cam-Web-Interface
+
+*Note: Remember to enable the Camera*
+
+https://elinux.org/RPi-Cam-Web-Interface
+
 ### Streaming video using vlc:
 Host (Raspberry Pi)
 
