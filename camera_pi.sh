@@ -1,4 +1,3 @@
-!#/bin/bash
 
 IP_OF_CLIENT=10.19.102.156
 
